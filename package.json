@@ -1,0 +1,21 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "interview cheatsheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "link": "sh link.sh",
+    "commit": "sh commit.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkaytunc/interview-cheatsheet.git"
+  },
+  "author": "Türkay Tunç",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turkaytunc/interview-cheatsheet/issues"
+  },
+  "homepage": "https://github.com/turkaytunc/interview-cheatsheet#readme"
+}
