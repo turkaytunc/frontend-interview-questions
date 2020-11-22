@@ -9,6 +9,7 @@
 - [Mixin](#Mixin)
 - [What is a Pure Function](#What-is-a-Pure-Function)
 - [Function Composition](#Function-Composition)
+- [Functional Programming](#Functional-Programming)
 
 ## Normal Bir HTML Rendering Akisi
 
@@ -92,3 +93,13 @@ new User('Turkay').sayHi(); // Hello Turkay!
 ## Function Composition
 
 - Function composition is the process of combining two or more functions to produce a new function. Composing functions together is like snapping together a series of pipes for our data to flow through.
+
+## Functional Programming
+
+- Functional programming is a programming paradigm, meaning that it is a way of thinking about software construction based on some fundamental, defining principles.
+
+- Functional programming is the process of building software by composing pure functions and avoiding shared state, mutable data, and side-effects.
+
+- Functional programming is declarative rather than imperative, and application state flows through pure functions.
+
+- Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects.
