@@ -6,6 +6,7 @@
 - [React Component Lifecycle](#React-Component-Lifecycle)
 - [What is a Closure](#What-is-a-Closure)
 - [Difference Between Class and Prototypal Inheritance](#Difference-Between-Class-and-Prototypal-Inheritance)
+- [Mixin](#Mixin)
 
 ## Normal Bir HTML Rendering Akisi
 
@@ -49,3 +50,36 @@
 - Prototypal Inheritance: A prototype is a working object instance. Objects inherit directly from other objects.
 - Instances may be composed from many different source objects, allowing for easy selective inheritance and a flat `[[Prototype]]` delegation hierarchy.
 - Instances are typically instantiated via factory functions, object literals, or `Object.create()`.
+- Concatenative inheritance: The process of inheriting features directly from one object to another by copying the source objects properties. In JavaScript, source prototypes are commonly referred to as mixins.
+
+## Mixin
+
+- Mixin is a class containing methods that can be used by other classes without a need to inherit from it.
+- In other words, a mixin provides methods that implement a certain behavior, but we do not use it alone, we use it to add the behavior to other classes.
+
+- Example
+
+```js
+// mixin
+let sayHiMixin = {
+  sayHi() {
+    alert(`Hello ${this.name}`);
+  },
+  sayBye() {
+    alert(`Bye ${this.name}`);
+  },
+};
+
+// usage:
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+// copy the methods
+Object.assign(User.prototype, sayHiMixin);
+
+// now User can say hi
+new User('Dude').sayHi(); // Hello Dude!
+```
