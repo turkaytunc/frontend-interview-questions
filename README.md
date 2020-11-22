@@ -7,6 +7,7 @@
 - [What is a Closure](#What-is-a-Closure)
 - [Difference Between Class and Prototypal Inheritance](#Difference-Between-Class-and-Prototypal-Inheritance)
 - [Mixin](#Mixin)
+- [What is a Pure Function](#What-is-a-Pure-Function)
 
 ## Normal Bir HTML Rendering Akisi
 
@@ -83,3 +84,9 @@ Object.assign(User.prototype, sayHiMixin);
 // now User can say hi
 new User('Dude').sayHi(); // Hello Dude!
 ```
+
+## What is a Pure Function
+
+- A function is a process which takes some input, called arguments, and produces some output called a return value.
+- Pure function: Given the same input, will always return the same output.
+- Pure function: Produces no side effects.
