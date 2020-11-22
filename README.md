@@ -5,6 +5,7 @@
 - [Normal Bir HTML Rendering Akisi](#Normal-Bir-HTML-Rendering-Akisi)
 - [React Component Lifecycle](#React-Component-Lifecycle)
 - [What is a Closure](#What-is-a-Closure)
+- [Difference Between Class and Prototypal Inheritance](#Difference-Between-Class-and-Prototypal-Inheritance)
 
 ## Normal Bir HTML Rendering Akisi
 
@@ -38,3 +39,13 @@
 - A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
 - In other words, a closure gives you access to an outer function’s scope from an inner function.
 - In JavaScript, closures are created every time a function is created, at function creation time.
+
+## Difference Between Class and Prototypal Inheritance
+
+- Unlike most other languages, JavaScript’s object system is based on prototypes, not classes.
+- Class Inheritance: A class is like a blueprint — a description of the object to be created. Classes inherit from classes and create subclass relationships: hierarchical class taxonomies.
+- Instances are typically instantiated via constructor functions with the `new` keyword.
+
+- Prototypal Inheritance: A prototype is a working object instance. Objects inherit directly from other objects.
+- Instances may be composed from many different source objects, allowing for easy selective inheritance and a flat `[[Prototype]]` delegation hierarchy.
+- Instances are typically instantiated via factory functions, object literals, or `Object.create()`.
