@@ -12,11 +12,11 @@
 
 ## Normal Bir HTML Rendering Akisi
 
-1. HTML parse edilerek DOM ağacı oluşturulur,
-2. JS ile DOM API gelen değişiklikler DOM Ağacını günceller
-3. StyleSheet CSS tarafından parse edilir. StyleSheet kuralları oluşturulur
-4. DOM Tree ve Style Rules birleştirilerek Render Tree oluşturulur.
-5. Layout yani tarayıcının özellikleri (Dekstop, Mobile, Çözünürlük vb..) göre ekrana boyama işlemi gerçekleştirilir.
+1. Parsing HTML and creating DOM tree.
+2. DOM tree updates using javascript based on DOM API
+3. Parsing CSS. Create StyleSheet rules.
+4. DOM Tree and Style Rules combine together and creates Render Tree.
+5. Render layout based on device(Mobile, Desktop).
 
 ## React Component Lifecycle
 
@@ -67,12 +67,9 @@ let sayHiMixin = {
   sayHi() {
     alert(`Hello ${this.name}`);
   },
-  sayBye() {
-    alert(`Bye ${this.name}`);
-  },
 };
 
-// usage:
+// create user
 class User {
   constructor(name) {
     this.name = name;
@@ -83,7 +80,7 @@ class User {
 Object.assign(User.prototype, sayHiMixin);
 
 // now User can say hi
-new User('Dude').sayHi(); // Hello Dude!
+new User('Turkay').sayHi(); // Hello Turkay!
 ```
 
 ## What is a Pure Function
