@@ -8,6 +8,7 @@
 - [Difference Between Class and Prototypal Inheritance](#Difference-Between-Class-and-Prototypal-Inheritance)
 - [Mixin](#Mixin)
 - [What is a Pure Function](#What-is-a-Pure-Function)
+- [Function Composition](#Function-Composition)
 
 ## Normal Bir HTML Rendering Akisi
 
@@ -90,3 +91,7 @@ new User('Dude').sayHi(); // Hello Dude!
 - A function is a process which takes some input, called arguments, and produces some output called a return value.
 - Pure function: Given the same input, will always return the same output.
 - Pure function: Produces no side effects.
+
+## Function Composition
+
+- Function composition is the process of combining two or more functions to produce a new function. Composing functions together is like snapping together a series of pipes for our data to flow through.
