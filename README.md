@@ -10,6 +10,7 @@
 - [What is a Pure Function](#What-is-a-Pure-Function)
 - [Function Composition](#Function-Composition)
 - [Functional Programming](#Functional-Programming)
+- [What is a Promise](#What-is-a-Promise)
 
 ## Normal Bir HTML Rendering Akisi
 
@@ -103,3 +104,15 @@ new User('Turkay').sayHi(); // Hello Turkay!
 - Functional programming is declarative rather than imperative, and application state flows through pure functions.
 
 - Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects.
+
+## What is a Promise
+
+- A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved.
+- A promise may be in one of 3 possible states: fulfilled, rejected, or pending.
+- Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
+- Promises following the spec must follow a specific set of rules:
+  - A promise or “thenable” is an object that supplies a standard-compliant .then() method.
+  - A pending promise may transition into a fulfilled or rejected state.
+  - A fulfilled or rejected promise is settled, and must not transition into any other state.
+  - Once a promise is settled, it must have a value (which may be undefined). That value must not change.
