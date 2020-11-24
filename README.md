@@ -11,6 +11,9 @@
 - [Function Composition](#Function-Composition)
 - [Functional Programming](#Functional-Programming)
 - [What is a Promise](#What-is-a-Promise)
+- [Higher Order Component](#Higher-Order-Component)
+- [What does setState do](#What-does-setState-do)
+- [What is the difference between state and props](#What-is-the-difference-between-state-and-props)
 
 ## How Rendering Works Step by Step
 
@@ -130,5 +133,23 @@ new User('Turkay').sayHi(); // Hello Turkay!
   - A pending promise may transition into a fulfilled or rejected state.
   - A fulfilled or rejected promise is settled, and must not transition into any other state.
   - Once a promise is settled, it must have a value (which may be undefined). That value must not change.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## Higher Order Component
+
+- A higher-order component is just a function that takes an existing component and returns another component that wraps it.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What does setState do
+
+- setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is the difference between state and props
+
+- Props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).
 
 [:arrow_up: Back to Top](#Table-of-Contents)
