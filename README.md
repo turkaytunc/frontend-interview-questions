@@ -37,6 +37,8 @@
 - [What is LIFO](#What-is-LIFO)
 - [Linear vs non-linear data structures](#Linear-vs-non-linear-data-structures)
 - [What is react portal](#What-is-react-portal)
+- [What is Currying](#What-is-Currying)
+- [What is SPA](#What-is-SPA)
 
 ## What are variables
 
@@ -397,5 +399,24 @@ function TextInputWithFocusButton() {
 ## What is react portal
 
 - Portal is used to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is Currying
+
+- Currying is the technique of converting a function that takes multiple arguments into a sequence of functions that each take a single argument.
+
+```js
+const add = (a) => (b) => a + b;
+const result = add(2)(3);
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is SPA
+
+- A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of the browser loading entire new pages.
+- The goal is faster transitions that make the website feel more like a native app.
+- In a SPA, all necessary HTML, JavaScript, and CSS code is either retrieved by the browser with a single page load or the appropriate resources are dynamically loaded and added to the page as necessary.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
