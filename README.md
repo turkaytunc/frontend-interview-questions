@@ -39,6 +39,8 @@
 - [What is react portal](#What-is-react-portal)
 - [What is Currying](#What-is-Currying)
 - [What is SPA](#What-is-SPA)
+- [What Is Server-Side Rendering](#What-Is-Server-Side-Rendering)
+- [What is the difference between undefined and null](#What-is-the-difference-between-undefined-and-null)
 
 ## What are variables
 
@@ -418,5 +420,21 @@ const result = add(2)(3);
 - A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of the browser loading entire new pages.
 - The goal is faster transitions that make the website feel more like a native app.
 - In a SPA, all necessary HTML, JavaScript, and CSS code is either retrieved by the browser with a single page load or the appropriate resources are dynamically loaded and added to the page as necessary.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What Is Server-Side Rendering
+
+- Server-side rendering (SSR) is the process of rendering web pages on a server and passing them to the browser (client-side), instead of rendering them in the browser.
+- The website loads quickly because the browser fetches content from the server before rendering it for the user.
+- More API calls to the server are made, because they’re made per request.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is the difference between undefined and null
+
+- Both are are falsy values.
+- undefined is the default value of a variable that has not been assigned a specific value.
+- null is a value that represents no value. null is value that has been explicitly defined to a variable.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
