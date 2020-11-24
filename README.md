@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+- [What are variables](#What-are-variables)
+- [What are constants](#What-are-constants)
 - [How Rendering Works Step by Step](#How-Rendering-Works-Step-by-Step)
 - [React Component Lifecycle](#React-Component-Lifecycle)
 - [What is a Closure](#What-is-a-Closure)
@@ -25,6 +27,15 @@
 - [What is super constructor](#What-is-super-constructor)
 - [What is Reconciliation](#What-is-Reconciliation)
 - [What is react fragments](#What-is-react-fragments)
+- [What is an algorithm](#What-is-an-algorithm)
+
+## What are variables
+
+- Variables are used for storing the input of a program or can be computational results during program execution.
+
+## What are constants
+
+- A constant is a programming entity whose value can’t be changed or modified during program execution.
 
 ## How Rendering Works Step by Step
 
@@ -299,3 +310,8 @@ function TextInputWithFocusButton() {
 - Fragments let you group a list of children without adding extra nodes to the DOM.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is an algorithm
+
+- An algorithm can be defined as a set of finite steps that when followed helps in accomplishing a particular task.
+- Important features of an algorithm are clarity, efficiency, and finiteness.
