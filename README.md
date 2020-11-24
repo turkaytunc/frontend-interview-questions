@@ -1,4 +1,4 @@
-# :pencil: Javascript-React Interview Cheatsheet
+# :pencil: Javascript-React Interview Questions
 
 ## Table of Contents
 
@@ -23,6 +23,8 @@
 - [What is context](#What-is-context)
 - [What is react children](#What-is-react-children)
 - [What is super constructor](#What-is-super-constructor)
+- [What is Reconciliation](#What-is-Reconciliation)
+- [What is react fragments](#What-is-react-fragments)
 
 ## How Rendering Works Step by Step
 
@@ -280,5 +282,20 @@ function TextInputWithFocusButton() {
 - The super keyword is used to access and call functions on an object's parent.
 - When used in a constructor, the super keyword appears alone and must be used before the this keyword is used.
 - The super keyword can also be used to call functions on a parent object.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is Reconciliation
+
+- Reconciliation is the process through which React updates the DOM.
+- When a component’s state changes, React has to calculate if it is necessary to update the DOM.
+- It does this by creating a virtual DOM and comparing it with the current DOM.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is react fragments
+
+- A common pattern in React is for a component to return multiple elements.
+- Fragments let you group a list of children without adding extra nodes to the DOM.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
