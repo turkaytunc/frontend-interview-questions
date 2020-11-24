@@ -1,8 +1,8 @@
-# Interview Cheatsheet
+# :pencil: Javascript-React Interview Cheatsheet
 
-## :pencil: Index
+## Table of Contents
 
-- [Normal Bir HTML Rendering Akisi](#Normal-Bir-HTML-Rendering-Akisi)
+- [How Rendering Works Step by Step](#How-Rendering-Works-Step-by-Step)
 - [React Component Lifecycle](#React-Component-Lifecycle)
 - [What is a Closure](#What-is-a-Closure)
 - [Difference Between Class and Prototypal Inheritance](#Difference-Between-Class-and-Prototypal-Inheritance)
@@ -12,13 +12,15 @@
 - [Functional Programming](#Functional-Programming)
 - [What is a Promise](#What-is-a-Promise)
 
-## Normal Bir HTML Rendering Akisi
+## How Rendering Works Step by Step
 
 1. Parsing HTML and creating DOM tree.
 2. DOM tree updates using javascript based on DOM API
 3. Parsing CSS. Create StyleSheet rules.
 4. DOM Tree and Style Rules combine together and creates Render Tree.
 5. Render layout based on device(Mobile, Desktop).
+
+[:arrow_up: Back to Top](#Table-of-Contents)
 
 ## React Component Lifecycle
 
@@ -45,6 +47,8 @@
 - In other words, a closure gives you access to an outer function’s scope from an inner function.
 - In JavaScript, closures are created every time a function is created, at function creation time.
 
+[:arrow_up: Back to Top](#Table-of-Contents)
+
 ## Difference Between Class and Prototypal Inheritance
 
 - Unlike most other languages, JavaScript’s object system is based on prototypes, not classes.
@@ -55,6 +59,8 @@
 - Instances may be composed from many different source objects, allowing for easy selective inheritance and a flat `[[Prototype]]` delegation hierarchy.
 - Instances are typically instantiated via factory functions, object literals, or `Object.create()`.
 - Concatenative inheritance: The process of inheriting features directly from one object to another by copying the source objects properties. In JavaScript, source prototypes are commonly referred to as mixins.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
 
 ## Mixin
 
@@ -85,15 +91,21 @@ Object.assign(User.prototype, sayHiMixin);
 new User('Turkay').sayHi(); // Hello Turkay!
 ```
 
+[:arrow_up: Back to Top](#Table-of-Contents)
+
 ## What is a Pure Function
 
 - A function is a process which takes some input, called arguments, and produces some output called a return value.
 - Pure function: Given the same input, will always return the same output.
 - Pure function: Produces no side effects.
 
+[:arrow_up: Back to Top](#Table-of-Contents)
+
 ## Function Composition
 
 - Function composition is the process of combining two or more functions to produce a new function. Composing functions together is like snapping together a series of pipes for our data to flow through.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
 
 ## Functional Programming
 
@@ -104,6 +116,8 @@ new User('Turkay').sayHi(); // Hello Turkay!
 - Functional programming is declarative rather than imperative, and application state flows through pure functions.
 
 - Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
 
 ## What is a Promise
 
@@ -116,3 +130,5 @@ new User('Turkay').sayHi(); // Hello Turkay!
   - A pending promise may transition into a fulfilled or rejected state.
   - A fulfilled or rejected promise is settled, and must not transition into any other state.
   - Once a promise is settled, it must have a value (which may be undefined). That value must not change.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
