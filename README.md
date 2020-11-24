@@ -35,6 +35,8 @@
 - [What is DRY principle](#What-is-DRY-principle)
 - [What is FIFO](#What-is-FIFO)
 - [What is LIFO](#What-is-LIFO)
+- [Linear vs non-linear data structures](#Linear-vs-non-linear-data-structures)
+- [What is react portal](#What-is-react-portal)
 
 ## What are variables
 
@@ -382,5 +384,18 @@ function TextInputWithFocusButton() {
 - LIFO is an abbreviation for Last in, first out is same as fist in, last out (FILO).
 - It is a method for handling data structures where the last element is processed first and the first element is processed last.
 - The data structure that implements LIFO is Stack.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## Linear vs non-linear data structures
+
+- In linear data structure, data elements are sequentially connected and each element is traversable through a single run. Examples: Array, List, Queue, Stack.
+- In non-linear data structure, data elements are hierarchically connected and are present at various levels. Examples: Graph, Tree.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is react portal
+
+- Portal is used to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
