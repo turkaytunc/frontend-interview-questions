@@ -16,6 +16,8 @@
 - [What is the difference between state and props](#What-is-the-difference-between-state-and-props)
 - [What is react element](#What-is-react-element)
 - [What is JSX](#What-is-JSX)
+- [How to bind methods or event handlers](#How-to-bind-methods-or-event-handlers)
+- [What is key prop](#What-is-key-prop)
 
 ## How Rendering Works Step by Step
 
@@ -166,5 +168,37 @@ new User('Turkay').sayHi(); // Hello Turkay!
 
 - JSX stands for JavaScript XML.
 - JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods.
+- JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## How to bind methods or event handlers
+
+- In JavaScript classes, the methods are not bound by default. The same thing applies for React event handlers defined as class methods.
+
+```js
+class SomeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    //some code
+  }
+}
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is key prop
+
+- A “key” is a special string attribute you need to include when creating lists of elements.
+- Keys help React identify which items have changed, are added, or are removed.
+- The best way to pick a key is to use a string that uniquely identifies a list item among its siblings.
+
+```js
+const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
+```
 
 [:arrow_up: Back to Top](#Table-of-Contents)

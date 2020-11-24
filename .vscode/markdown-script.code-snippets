@@ -1,0 +1,7 @@
+{
+  "Create markdown header": {
+    "prefix": ["cmdh"],
+    "body": ["### ${1:header}\n\n```${2:ts}\n\n$0\n```"],
+    "description": "Creates header code block"
+  }
+}
