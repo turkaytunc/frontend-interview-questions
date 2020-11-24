@@ -32,6 +32,9 @@
 - [What is react fragments](#What-is-react-fragments)
 - [What is an algorithm](#What-is-an-algorithm)
 - [What is a compiler and how it works](#What-is-a-compiler-and-how-it-works)
+- [What is DRY principle](#What-is-DRY-principle)
+- [What is FIFO](#What-is-FIFO)
+- [What is LIFO](#What-is-LIFO)
 
 ## What are variables
 
@@ -362,3 +365,22 @@ function TextInputWithFocusButton() {
 
 - DRY stands for Don’t Repeat Yourself.
 - DRY is a principle of software development aimed at reducing repetition of software patterns.
+- Violations of DRY are typically referred to as WET solutions, which is commonly taken to stand for "write every time", "write everything twice".
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is FIFO
+
+- FIFO is an abbreviation for first in, first out.
+- It is a method for handling data structures where the first element is processed first and the newest element is processed last.
+- The data structure that implements FIFO is Queue.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is LIFO
+
+- LIFO is an abbreviation for Last in, first out is same as fist in, last out (FILO).
+- It is a method for handling data structures where the last element is processed first and the first element is processed last.
+- The data structure that implements LIFO is Stack.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
