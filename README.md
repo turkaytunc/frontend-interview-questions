@@ -19,6 +19,8 @@
 - [How to bind methods or event handlers](#How-to-bind-methods-or-event-handlers)
 - [What is key prop](#What-is-key-prop)
 - [What is ref and useRef](#What-is-ref-and-useRef)
+- [What is Virtual DOM](#What-is-Virtual-DOM)
+- [What is context](#What-is-context)
 
 ## How Rendering Works Step by Step
 
@@ -229,5 +231,38 @@ function TextInputWithFocusButton() {
   );
 }
 ```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is Virtual DOM
+
+- When new elements are added to the UI, a virtual DOM, which is represented as a tree is created. Each element is a node on this tree.
+- If the state of any of these elements changes, a new virtual DOM tree is created. This tree is then compared or “diffed” with the previous virtual DOM tree.
+- Once this is done, the virtual DOM calculates the best possible method to make these changes to the real DOM. This ensures that there are minimal operations on the real DOM.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is the difference between Shadow DOM and Virtual DOM
+
+- The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components.
+- The Virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
+- Virtual DOM is creating a copy of the whole DOM object, and Shadow DOM creates small pieces of the DOM object which has their own, isolated scope for the element they represent.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is react fiber
+
+- React Fiber is a set of internal algorithms for rendering graphics used by the JavaScript library React, as opposed to its old rendering algorithm, Stack.
+- The actual syntax for programming with React does not change; only the way that the syntax is executed has changed.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is context
+
+- Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+- In a typical React application, data is passed top-down (parent to child) via props, but this can be cumbersome for certain types of props that are required by many components within an application.
+
+- Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
