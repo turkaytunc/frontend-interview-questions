@@ -357,3 +357,8 @@ function TextInputWithFocusButton() {
   6. Code Generation
 
 [:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is DRY principle
+
+- DRY stands for Don’t Repeat Yourself.
+- DRY is a principle of software development aimed at reducing repetition of software patterns.
