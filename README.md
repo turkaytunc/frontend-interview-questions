@@ -21,6 +21,8 @@
 - [What is ref and useRef](#What-is-ref-and-useRef)
 - [What is Virtual DOM](#What-is-Virtual-DOM)
 - [What is context](#What-is-context)
+- [What is react children](#What-is-react-children)
+- [What is super constructor](#What-is-super-constructor)
 
 ## How Rendering Works Step by Step
 
@@ -264,5 +266,19 @@ function TextInputWithFocusButton() {
 - In a typical React application, data is passed top-down (parent to child) via props, but this can be cumbersome for certain types of props that are required by many components within an application.
 
 - Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is react children
+
+- Children is a prop that allow you to pass components as data to other components
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is super constructor
+
+- The super keyword is used to access and call functions on an object's parent.
+- When used in a constructor, the super keyword appears alone and must be used before the this keyword is used.
+- The super keyword can also be used to call functions on a parent object.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
