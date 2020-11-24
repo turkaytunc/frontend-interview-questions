@@ -18,6 +18,7 @@
 - [What is JSX](#What-is-JSX)
 - [How to bind methods or event handlers](#How-to-bind-methods-or-event-handlers)
 - [What is key prop](#What-is-key-prop)
+- [What is ref and useRef](#What-is-ref-and-useRef)
 
 ## How Rendering Works Step by Step
 
@@ -199,6 +200,34 @@ class SomeButton extends React.Component {
 
 ```js
 const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is ref and useRef
+
+- Refs provide a way to access DOM nodes or React elements created in the render method.
+
+```js
+const refContainer = useRef(initialValue);
+```
+
+- useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+
+```js
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+    inputEl.current.focus();
+  };
+  return (
+    <>
+      <input ref={inputEl} type="text" />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}
 ```
 
 [:arrow_up: Back to Top](#Table-of-Contents)
