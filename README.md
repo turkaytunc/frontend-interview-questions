@@ -4,11 +4,14 @@
 
 - [What are variables](#What-are-variables)
 - [What are constants](#What-are-constants)
+- [What is array](#What-is-array)
+- [Why we need software testing](#Why-we-need-software-testing)
+- [What is program execution](#What-is-program-execution)
 - [How Rendering Works Step by Step](#How-Rendering-Works-Step-by-Step)
 - [React Component Lifecycle](#React-Component-Lifecycle)
 - [What is a Closure](#What-is-a-Closure)
 - [Difference Between Class and Prototypal Inheritance](#Difference-Between-Class-and-Prototypal-Inheritance)
-- [Mixin](#Mixin)
+- [What is Mixin](#Mixin)
 - [What is a Pure Function](#What-is-a-Pure-Function)
 - [Function Composition](#Function-Composition)
 - [Functional Programming](#Functional-Programming)
@@ -28,6 +31,7 @@
 - [What is Reconciliation](#What-is-Reconciliation)
 - [What is react fragments](#What-is-react-fragments)
 - [What is an algorithm](#What-is-an-algorithm)
+- [What is a compiler and how it works](#What-is-a-compiler-and-how-it-works)
 
 ## What are variables
 
@@ -36,6 +40,28 @@
 ## What are constants
 
 - A constant is a programming entity whose value can’t be changed or modified during program execution.
+
+## What is array
+
+- An array is a data structure that contains a group of elements.
+- Typically these elements are all of the same data type, such as an integer or string.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## Why we need software testing
+
+- Some mistakes are minor but some can be very expensive or dangerous.
+- We need to constantly check and test our software to make sure that no gaps exist.
+- It makes the software more reliable and easy to use.
+- Thoroughly tested software ensures reliable and high-performance software operation.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is program execution
+
+- Program execution is the process that a computer executes the instructions of a computer program.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
 
 ## How Rendering Works Step by Step
 
@@ -315,3 +341,19 @@ function TextInputWithFocusButton() {
 
 - An algorithm can be defined as a set of finite steps that when followed helps in accomplishing a particular task.
 - Important features of an algorithm are clarity, efficiency, and finiteness.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is a compiler and how it works
+
+- A compiler is a computer program that translates written code in one programming language into another language.
+
+- Compiler usually follows these steps:
+  1. Lexical Analysis
+  2. Syntax Analysis
+  3. Semantic Analysis
+  4. Intermediate Code Generation
+  5. Code Optimization
+  6. Code Generation
+
+[:arrow_up: Back to Top](#Table-of-Contents)
