@@ -11,9 +11,11 @@
 - [Function Composition](#Function-Composition)
 - [Functional Programming](#Functional-Programming)
 - [What is a Promise](#What-is-a-Promise)
-- [Higher Order Component](#Higher-Order-Component)
+- [What is Higher Order Component](#Higher-Order-Component)
 - [What does setState do](#What-does-setState-do)
 - [What is the difference between state and props](#What-is-the-difference-between-state-and-props)
+- [What is react element](#What-is-react-element)
+- [What is JSX](#What-is-JSX)
 
 ## How Rendering Works Step by Step
 
@@ -151,5 +153,18 @@ new User('Turkay').sayHi(); // Hello Turkay!
 ## What is the difference between state and props
 
 - Props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is react element
+
+- An element is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. Elements can contain other elements in their props.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is JSX
+
+- JSX stands for JavaScript XML.
+- JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
