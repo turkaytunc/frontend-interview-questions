@@ -53,6 +53,8 @@
 - [What is IIFE](#What-is-IIFE)
 - [What is functor](#What-is-functor)
 - [Explain the difference between call bind apply](#Explain-the-difference-between-call-bind-apply)
+- [What are Higher Order Functions](#What-are-Higher-Order-Functions)
+- [What is a Callback function](#What-is-a-Callback-function)
 
 ## What are variables
 
@@ -586,6 +588,31 @@ logPersonName('en');
 
 logName.call(person, 'en', 'es'); // Binds this keyword to given object and calls function
 logName.apply(person, ['en', 'es']); // Same as call but takes arguments as an array
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What are Higher Order Functions
+
+- A higher order function is a function that takes a function as an argument, or returns a function.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is a Callback function
+
+- A Callback function is a function that is gonna get called at a later point in time.
+
+```js
+function greeting(name) {
+  alert('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(greeting);
 ```
 
 [:arrow_up: Back to Top](#Table-of-Contents)
