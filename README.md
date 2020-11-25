@@ -52,6 +52,7 @@
 - [What is hoisting](#What-is-hoisting)
 - [What is IIFE](#What-is-IIFE)
 - [What is functor](#What-is-functor)
+- [Explain the difference between call bind apply](#Explain-the-difference-between-call-bind-apply)
 
 ## What are variables
 
@@ -554,6 +555,37 @@ var y; // Declare y
 
 ```js
 [1, 2, 3].map((x) => x * 2); //=> [2, 4, 6]
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## Explain the difference between call bind apply
+
+- They are all attach "this" into function (or object) and the difference is in the function invocation.
+- Call/apply call the function immediately, whereas bind returns a function that, when later executed, will have the correct context set for calling the original function.
+- This way you can maintain context in async callbacks and events.
+
+```js
+let person = {
+  firstname: 'John',
+  lastname: 'Doe',
+  getFullName: function () {
+    let fullname = this.firstname + ' ' + this.lastname;
+    return fullname;
+  },
+};
+
+let logName = function (lang1, lang2) {
+  console.log('Logged: ' + this.getFullName());
+  console.log('Arguments: ' + lang1 + ' ' + lang2);
+  console.log('-----------');
+};
+
+let logPersonName = logName.bind(person); // Binding this keyword, returns function.
+logPersonName('en');
+
+logName.call(person, 'en', 'es'); // Binds this keyword to given object and calls function
+logName.apply(person, ['en', 'es']); // Same as call but takes arguments as an array
 ```
 
 [:arrow_up: Back to Top](#Table-of-Contents)
