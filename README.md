@@ -50,6 +50,8 @@
 - [How to evaluate multiple expressions in one line](#How-to-evaluate-multiple-expressions-in-one-line)
 - [What is object prototype](#What-is-object-prototype)
 - [What is hoisting](#What-is-hoisting)
+- [What is IIFE](#What-is-IIFE)
+- [What is functor](#What-is-functor)
 
 ## What are variables
 
@@ -524,6 +526,34 @@ variable = (variable++, (variable *= 5), (variable -= 8), (variable += 3));
 ```js
 var x = 5; // Initialize x
 var y; // Declare y
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is IIFE
+
+- IIFE is stands for "Immediately Invoked Function Expression".
+- IIFE is a JavaScript function that runs as soon as it is defined.
+- The function becomes a function expression which is immediately executed.
+- The variable within the expression can not be accessed from outside it.
+
+```js
+(function () {
+  //statements
+  //statements
+  //statements
+})();
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is functor
+
+- A Functor is something that is Mappable or something that can be mapped between objects in a Category.
+- A category can be a collection of objects, arrays, functions.
+
+```js
+[1, 2, 3].map((x) => x * 2); //=> [2, 4, 6]
 ```
 
 [:arrow_up: Back to Top](#Table-of-Contents)
