@@ -43,6 +43,10 @@
 - [What is the difference between undefined and null](#What-is-the-difference-between-undefined-and-null)
 - [What is event loop](#What-is-event-loop)
 - [What is DOM](#What-is-DOM)
+- [What is event bubbling](#What-is-event-bubbling)
+- [What is event capturing](#What-is-event-capturing)
+- [Explain stopPropagation method](#Explain-stopPropagation-method)
+- [Explain preventDefault method](#Explain-preventDefault-method)
 
 ## What are variables
 
@@ -455,5 +459,33 @@ const result = add(2)(3);
 - DOM stands for Document Object Model.
 - When the browser first parses HTML document it creates a big object based on the HTML document this is the DOM.
 - It is a tree structure that is created from HTML.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is event bubbling
+
+- It relates to the order in which event handlers are called when one element is nested inside a second element, and both elements have registered a listener for the same event (a click, for example).
+- In the bubbling phase, the event bubbles up or it goes to its parent until it reaches all the way to the window object.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is event capturing
+
+- When an event occurs on a DOM element, that event does not entirely occur on that just one element.
+- In Capturing Phase, the event starts from the window all the way down to the element that triggered the event.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## Explain stopPropagation method
+
+- The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.
+- It does not, however, prevent any default behaviors from occurring; for instance, clicks on links are still processed.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## Explain preventDefault method
+
+- The Event interface's preventDefault() method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+- If used in a form element it prevents it from submitting. If used in an anchor element it prevents it from navigating. If used in a contextmenu it prevents it from showing or displaying.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
