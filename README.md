@@ -47,6 +47,9 @@
 - [What is event capturing](#What-is-event-capturing)
 - [Explain stopPropagation method](#Explain-stopPropagation-method)
 - [Explain preventDefault method](#Explain-preventDefault-method)
+- [How to evaluate multiple expressions in one line](#How-to-evaluate-multiple-expressions-in-one-line)
+- [What is object prototype](#What-is-object-prototype)
+- [What is hoisting](#What-is-hoisting)
 
 ## What are variables
 
@@ -487,5 +490,40 @@ const result = add(2)(3);
 
 - The Event interface's preventDefault() method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
 - If used in a form element it prevents it from submitting. If used in an anchor element it prevents it from navigating. If used in a contextmenu it prevents it from showing or displaying.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## How to evaluate multiple expressions in one line
+
+- We can use the , or comma operator to evaluate multiple expressions in one line.
+- It evaluates from left-to-right and returns the value of the last item on the right or the last operand.
+
+```js
+let variable = 5;
+
+variable = (variable++, (variable *= 5), (variable -= 8), (variable += 3));
+```
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is object prototype
+
+- Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+- Objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
+- The prototype property can be used to add methods to existing constructors.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is hoisting
+
+- In JavaScript, a variable can be declared after it has been used.
+- A variable can be used before it has been declared.
+- Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope.
+- JavaScript only hoists declarations, not initializations.
+
+```js
+var x = 5; // Initialize x
+var y; // Declare y
+```
 
 [:arrow_up: Back to Top](#Table-of-Contents)
