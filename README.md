@@ -41,6 +41,8 @@
 - [What is SPA](#What-is-SPA)
 - [What Is Server-Side Rendering](#What-Is-Server-Side-Rendering)
 - [What is the difference between undefined and null](#What-is-the-difference-between-undefined-and-null)
+- [What is event loop](#What-is-event-loop)
+- [What is DOM](#What-is-DOM)
 
 ## What are variables
 
@@ -436,5 +438,22 @@ const result = add(2)(3);
 - Both are are falsy values.
 - undefined is the default value of a variable that has not been assigned a specific value.
 - null is a value that represents no value. null is value that has been explicitly defined to a variable.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is event loop
+
+- JavaScript has a concurrency model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+- A JavaScript runtime uses a message queue, which is a list of messages to be processed. Each message has an associated function which gets called in order to handle the message.
+- The event loop’s purpose is to look at the call stack and the queue. When the stack is empty, it takes the first thing on the queue and executes it.
+- A very interesting property of the event loop model is that JavaScript, unlike a lot of other languages, never blocks.
+
+[:arrow_up: Back to Top](#Table-of-Contents)
+
+## What is DOM
+
+- DOM stands for Document Object Model.
+- When the browser first parses HTML document it creates a big object based on the HTML document this is the DOM.
+- It is a tree structure that is created from HTML.
 
 [:arrow_up: Back to Top](#Table-of-Contents)
