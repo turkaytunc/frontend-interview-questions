@@ -1,4 +1,4 @@
-# :pencil: Javascript-React Interview Questions
+# :pencil: Frontend Interview Questions
 
 ## Table of Contents
 
